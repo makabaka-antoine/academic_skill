@@ -1,0 +1,9 @@
+# Core PDF packages verified with Python 3.12.14; Pillow requires Python 3.11+.
+# jsonschema/PyYAML are declared below; record actual installation with run_case.py doctor.
+pdfplumber==0.11.9
+pdfminer.six==20251230
+pypdf==6.21.4
+pypdfium2==5.13.0
+Pillow==13.0.0
+jsonschema>=4.22,<5
+PyYAML>=6,<7
