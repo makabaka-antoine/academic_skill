@@ -1,0 +1,11 @@
+{
+  "terms": [
+    {
+      "id": "T0003",
+      "source_forms": ["error rate"],
+      "target": "误差率",
+      "selection_status": "auto_proposed",
+      "basis": "合成材料第 2 页。术语表示 A、B 组报告的同一个比率指标。"
+    }
+  ]
+}
