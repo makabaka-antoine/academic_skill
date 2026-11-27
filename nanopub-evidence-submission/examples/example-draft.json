@@ -1,0 +1,474 @@
+{
+  "snapshot_id": null,
+  "coverage": {
+    "complete": true,
+    "scope": "Twenty demonstration claims, including the separate ablation row and an explicit search for field validation.",
+    "gaps": []
+  },
+  "claims": [
+    {
+      "key": "c01",
+      "status": "reported",
+      "statement": "LumenBench contains 48 daylight scenes.",
+      "subject": "LumenBench",
+      "relation": "contains",
+      "object": "48 daylight scenes",
+      "scope": [],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "data",
+      "basis": "The method sentence names the collection, count and scene class.",
+      "evidence": [
+        {
+          "anchor": "S1-U0004.1"
+        }
+      ]
+    },
+    {
+      "key": "c02",
+      "status": "reported",
+      "statement": "LumenBench contains 16 dusk scenes.",
+      "subject": "LumenBench",
+      "relation": "contains",
+      "object": "16 dusk scenes",
+      "scope": [],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "data",
+      "basis": "The next sentence gives the separate dusk count.",
+      "evidence": [
+        {
+          "anchor": "S1-U0004.2"
+        }
+      ]
+    },
+    {
+      "key": "c03",
+      "status": "reported",
+      "statement": "Model Cedar was trained on Dataset Juniper.",
+      "subject": "Model Cedar",
+      "relation": "trained_on",
+      "object": "Dataset Juniper",
+      "scope": [],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "method",
+      "basis": "The passive sentence explicitly identifies the training data.",
+      "evidence": [
+        {
+          "anchor": "S1-U0004.3"
+        }
+      ]
+    },
+    {
+      "key": "c04",
+      "status": "reported",
+      "statement": "Model Birch was evaluated on the held-out LumenBench split.",
+      "subject": "Model Birch",
+      "relation": "evaluated_on",
+      "object": "held-out LumenBench split",
+      "scope": [],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "method",
+      "basis": "The evaluation sentence identifies the held-out split.",
+      "evidence": [
+        {
+          "anchor": "S1-U0004.4"
+        }
+      ]
+    },
+    {
+      "key": "c05",
+      "status": "reported",
+      "statement": "Model Cedar uses temperature scaling.",
+      "subject": "Model Cedar",
+      "relation": "uses",
+      "object": "temperature scaling",
+      "scope": [],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "method",
+      "basis": "The method sentence names the calibration method.",
+      "evidence": [
+        {
+          "anchor": "S1-U0004.5"
+        }
+      ]
+    },
+    {
+      "key": "c06",
+      "status": "reported",
+      "statement": "Model Cedar achieved 92% accuracy on the held-out LumenBench split.",
+      "subject": "Model Cedar",
+      "relation": "has_value",
+      "object": "92%",
+      "scope": [
+        "held-out LumenBench split"
+      ],
+      "metric": "accuracy",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "One sentence binds Cedar, the accuracy metric, the value and the test split.",
+      "evidence": [
+        {
+          "anchor": "S1-U0005.1"
+        }
+      ]
+    },
+    {
+      "key": "c07",
+      "status": "reported",
+      "statement": "Model Birch achieved 84% accuracy on the held-out LumenBench split.",
+      "subject": "Model Birch",
+      "relation": "has_value",
+      "object": "84%",
+      "scope": [
+        "held-out LumenBench split"
+      ],
+      "metric": "accuracy",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The sentence explicitly states Birch's accuracy on that split.",
+      "evidence": [
+        {
+          "anchor": "S1-U0005.2"
+        }
+      ]
+    },
+    {
+      "key": "c08",
+      "status": "reported",
+      "statement": "Model Cedar achieved 76% recall on the held-out LumenBench split.",
+      "subject": "Model Cedar",
+      "relation": "has_value",
+      "object": "76%",
+      "scope": [
+        "held-out LumenBench split"
+      ],
+      "metric": "recall",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The sentence ties the reported recall to Cedar and the split.",
+      "evidence": [
+        {
+          "anchor": "S1-U0005.3"
+        }
+      ]
+    },
+    {
+      "key": "c09",
+      "status": "reported",
+      "statement": "Model Birch achieved 70% recall on the held-out LumenBench split.",
+      "subject": "Model Birch",
+      "relation": "has_value",
+      "object": "70%",
+      "scope": [
+        "held-out LumenBench split"
+      ],
+      "metric": "recall",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The sentence ties the reported recall to Birch and the split.",
+      "evidence": [
+        {
+          "anchor": "S1-U0005.4"
+        }
+      ]
+    },
+    {
+      "key": "c10",
+      "status": "reported",
+      "statement": "Model Cedar had a higher F1 score than Model Birch on the held-out LumenBench split.",
+      "subject": "Model Cedar",
+      "relation": "higher_than",
+      "object": "Model Birch",
+      "scope": [
+        "held-out LumenBench split"
+      ],
+      "metric": "F1 score",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The explicit higher-than construction fixes direction and identifies F1.",
+      "evidence": [
+        {
+          "anchor": "S1-U0005.5"
+        }
+      ]
+    },
+    {
+      "key": "c11",
+      "status": "reported",
+      "statement": "Model Cedar had a latency of 24 ms at batch size 1 on a CPU.",
+      "subject": "Model Cedar",
+      "relation": "has_value",
+      "object": "24 ms",
+      "scope": [
+        "batch size 1",
+        "CPU"
+      ],
+      "metric": "latency",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The measured latency, batch size and CPU setting are in one sentence.",
+      "evidence": [
+        {
+          "anchor": "S1-U0006.1"
+        }
+      ]
+    },
+    {
+      "key": "c12",
+      "status": "reported",
+      "statement": "Model Birch had a latency of 32 ms at batch size 1 on a CPU.",
+      "subject": "Model Birch",
+      "relation": "has_value",
+      "object": "32 ms",
+      "scope": [
+        "batch size 1",
+        "CPU"
+      ],
+      "metric": "latency",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The measured latency, batch size and CPU setting are in the Birch sentence.",
+      "evidence": [
+        {
+          "anchor": "S1-U0006.2"
+        }
+      ]
+    },
+    {
+      "key": "c13",
+      "status": "reported",
+      "statement": "Median calibration error did not differ significantly between Preset P and Preset Q at the 5% significance level.",
+      "subject": "Preset P",
+      "relation": "differs_from",
+      "object": "Preset Q",
+      "scope": [
+        "5% significance level"
+      ],
+      "metric": "median calibration error",
+      "polarity": "negative",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The reported null comparison is at the stated significance level.",
+      "evidence": [
+        {
+          "anchor": "S1-U0006.3"
+        }
+      ]
+    },
+    {
+      "key": "c14",
+      "status": "reported",
+      "statement": "Lower light was associated with more false positives in the dusk subset.",
+      "subject": "Lower light",
+      "relation": "associated_with",
+      "object": "more false positives",
+      "scope": [
+        "dusk subset"
+      ],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "Association language and the dusk subset are explicit.",
+      "evidence": [
+        {
+          "anchor": "S1-U0007.1"
+        }
+      ]
+    },
+    {
+      "key": "c15",
+      "status": "reported",
+      "statement": "Only under the fixed-input condition, Filter Indigo reduced measurement noise by 18%.",
+      "subject": "Filter Indigo",
+      "relation": "decreases",
+      "object": "measurement noise",
+      "scope": [
+        "fixed-input condition",
+        "18% reduction"
+      ],
+      "metric": "measurement noise",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The restriction and measured reduction occur in the same sentence.",
+      "evidence": [
+        {
+          "anchor": "S1-U0007.2"
+        }
+      ]
+    },
+    {
+      "key": "c16",
+      "status": "reported",
+      "statement": "Sensor Amber detected a reflected pulse for event E9.",
+      "subject": "Sensor Amber",
+      "relation": "detects",
+      "object": "a reflected pulse",
+      "scope": [
+        "event E9"
+      ],
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "A single detection is tied to the named event.",
+      "evidence": [
+        {
+          "anchor": "S1-U0007.3"
+        }
+      ]
+    },
+    {
+      "key": "c17",
+      "status": "reported",
+      "statement": "The fixed exposure setting may reduce sensor drift over four hours.",
+      "subject": "fixed exposure setting",
+      "relation": "decreases",
+      "object": "sensor drift",
+      "scope": [
+        "over four hours"
+      ],
+      "polarity": "positive",
+      "modality": "hedged",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The modal 'may' and observation window are explicit.",
+      "evidence": [
+        {
+          "anchor": "S1-U0008.1"
+        }
+      ]
+    },
+    {
+      "key": "c18",
+      "status": "reported",
+      "statement": "The authors hypothesize that lens haze increases capture variance in dusk scenes.",
+      "subject": "lens haze",
+      "relation": "increases",
+      "object": "capture variance",
+      "scope": [
+        "dusk scenes"
+      ],
+      "polarity": "positive",
+      "modality": "hypothesis",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "hypothesis",
+      "basis": "The discussion explicitly presents the relationship as a hypothesis.",
+      "evidence": [
+        {
+          "anchor": "S1-U0011.1"
+        }
+      ]
+    },
+    {
+      "key": "c19",
+      "status": "reported",
+      "statement": "Model Larch had 68% recall in the dusk split in the separate ablation.",
+      "subject": "Model Larch",
+      "relation": "has_value",
+      "object": "68%",
+      "scope": [
+        "dusk split",
+        "separate ablation"
+      ],
+      "metric": "recall",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The row links Larch to the value and split. Its header names recall and its caption distinguishes the ablation.",
+      "evidence": [
+        {
+          "anchor": "S1-U0010.2"
+        },
+        {
+          "anchor": "S1-U0010.1",
+          "role": "context"
+        },
+        {
+          "anchor": "S1-U0009.1",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "key": "c20",
+      "status": "reported",
+      "statement": "The baseline parser used 96 MB of memory in the ablation.",
+      "subject": "baseline parser",
+      "relation": "has_value",
+      "object": "96 MB",
+      "scope": [
+        "ablation"
+      ],
+      "metric": "memory",
+      "polarity": "positive",
+      "modality": "asserted",
+      "origin": "this_work",
+      "evidence_type": "direct",
+      "claim_type": "finding",
+      "basis": "The sentence names baseline memory use in the ablation.",
+      "evidence": [
+        {
+          "anchor": "S1-U0008.2"
+        }
+      ]
+    },
+    {
+      "key": "u01",
+      "status": "not_reported",
+      "statement": "The study reports a field validation.",
+      "reason": "The fictional report gives a held-out split and an ablation. It gives no field validation result.",
+      "searched": [
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    }
+  ]
+}

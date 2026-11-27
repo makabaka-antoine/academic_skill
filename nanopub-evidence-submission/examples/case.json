@@ -1,0 +1,41 @@
+{
+  "case_id": "fictional-lumenbench-demo",
+  "material": {
+    "path": "fictional-study.md"
+  },
+  "scope": "Twenty distinct example claims across Methods, Results and Discussion, including one row of Table 1.",
+  "output_contract": {
+    "type": "object",
+    "properties": {
+      "case_id": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "success",
+          "partial",
+          "unable_to_determine",
+          "failed"
+        ]
+      },
+      "input_identification": {
+        "type": "object"
+      },
+      "claims": {
+        "type": "array"
+      },
+      "evidence_locations": {
+        "type": "array"
+      },
+      "sources": {
+        "type": "array"
+      },
+      "uncertainty": {
+        "type": "array"
+      },
+      "change_records": {
+        "type": "array"
+      }
+    }
+  }
+}
